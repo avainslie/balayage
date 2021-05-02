@@ -10,11 +10,11 @@
           <%= link_to 'Gallery', home_about_path, class:"nav-link"%>
         </li>
         <li class="nav-item">
-          <%= link_to 'Stylists', friends_path, class:"nav-link"%>
+          <%= link_to 'Stylists', stylists_path, class:"nav-link"%>
         </li>
         <% if user_signed_in? %>
           <li class="nav-item">
-          <%= link_to 'New Stylist', new_friend_path, class:"nav-link"%>
+          <%= link_to 'New Stylist', new_stylist_path, class:"nav-link"%>
           </li>
           <li class="nav-item">
             <%= link_to 'Edit profile', edit_user_registration_path, class:"nav-link"%>

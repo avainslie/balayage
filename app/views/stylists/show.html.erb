@@ -1,0 +1,28 @@
+
+<p>
+  <strong>First name:</strong>
+  <%= @stylist.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @stylist.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @stylist.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @stylist.phone %>
+</p>
+
+<p>
+  <strong>Instagram:</strong>
+  <%= @stylist.instagram %>
+</p>
+
+<%= link_to 'Edit', edit_stylist_path(@stylist), class:'btn btn-secondary'%> 
+<%= link_to 'Back', stylists_path, class:'btn btn-secondary' %>

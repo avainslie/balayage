@@ -1,51 +1,51 @@
 require "application_system_test_case"
 
-class FriendsTest < ApplicationSystemTestCase
+class stylistsTest < ApplicationSystemTestCase
   setup do
-    @friend = friends(:one)
+    @stylist = stylists(:one)
   end
 
   test "visiting the index" do
-    visit friends_url
-    assert_selector "h1", text: "Friends"
+    visit stylists_url
+    assert_selector "h1", text: "stylists"
   end
 
-  test "creating a Friend" do
-    visit friends_url
-    click_on "New Friend"
+  test "creating a stylist" do
+    visit stylists_url
+    click_on "New stylist"
 
-    fill_in "Email", with: @friend.email
-    fill_in "First name", with: @friend.first_name
-    fill_in "Last name", with: @friend.last_name
-    fill_in "Phone", with: @friend.phone
-    fill_in "Twitter", with: @friend.twitter
-    click_on "Create Friend"
+    fill_in "Email", with: @stylist.email
+    fill_in "First name", with: @stylist.first_name
+    fill_in "Last name", with: @stylist.last_name
+    fill_in "Phone", with: @stylist.phone
+    fill_in "Twitter", with: @stylist.twitter
+    click_on "Create stylist"
 
-    assert_text "Friend was successfully created"
+    assert_text "stylist was successfully created"
     click_on "Back"
   end
 
-  test "updating a Friend" do
-    visit friends_url
+  test "updating a stylist" do
+    visit stylists_url
     click_on "Edit", match: :first
 
-    fill_in "Email", with: @friend.email
-    fill_in "First name", with: @friend.first_name
-    fill_in "Last name", with: @friend.last_name
-    fill_in "Phone", with: @friend.phone
-    fill_in "Twitter", with: @friend.twitter
-    click_on "Update Friend"
+    fill_in "Email", with: @stylist.email
+    fill_in "First name", with: @stylist.first_name
+    fill_in "Last name", with: @stylist.last_name
+    fill_in "Phone", with: @stylist.phone
+    fill_in "Twitter", with: @stylist.twitter
+    click_on "Update stylist"
 
-    assert_text "Friend was successfully updated"
+    assert_text "stylist was successfully updated"
     click_on "Back"
   end
 
-  test "destroying a Friend" do
-    visit friends_url
+  test "destroying a stylist" do
+    visit stylists_url
     page.accept_confirm do
       click_on "Destroy", match: :first
     end
 
-    assert_text "Friend was successfully destroyed"
+    assert_text "stylist was successfully destroyed"
   end
 end

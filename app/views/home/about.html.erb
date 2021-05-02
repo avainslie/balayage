@@ -1,33 +1,36 @@
-<section>
+<%= stylesheet_link_tag 'about' %>
+<%= javascript_pack_tag 'gallery' %>
+
+<section class="gallery min-vh-100">
 	<div class="container-lg">
 
-		<div class="row">
+		<div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
 			
 			<div class="col">
-				<%= image_tag "brownToBlonde/one.jpg", width:'100px' %> 
+				<%= image_tag "brownToBlonde/one.jpg", class: "gallery-item" %> 
 				<p>very nice</p>
 			</div>
 			<div class="col">
-				<%= image_tag "brownToBlonde/two.jpg" , width:'100px' %> 
+				<%= image_tag "brownToBlonde/two.jpg", class: "gallery-item"  %> 
 				<p>hello</p>
 			</div>
 			<div class="col">
-				<%= image_tag "brownToBlonde/three.jpg", width:'100px'%> 
+				<%= image_tag "brownToBlonde/three.jpg", class: "gallery-item"  %> 
 			</div>
 			<div class="col">
-				<%= image_tag "brownToBlonde/four.jpg", width:'100px'%> 
+				<%= image_tag "brownToBlonde/four.jpg", class: "gallery-item"  %> 
 			</div>
 			<div class="col">
-				<%= image_tag "brownToBlonde/five.jpg", width:'100px'%> 
+				<%= image_tag "brownToBlonde/five.jpg", class: "gallery-item"  %> 
 			</div>
 			<div class="col">
-				<%= image_tag "brownToBlonde/six.jpg", width:'100px'%> 
+				<%= image_tag "brownToBlonde/six.jpg", class: "gallery-item"  %> 
 			</div>
 			<div class="col">
-				<%= image_tag "brownToBlonde/seven.jpg", width:'100px'%> 
+				<%= image_tag "brownToBlonde/seven.jpg", class: "gallery-item"  %> 
 			</div>
 			<div class="col">
-				<%image_tag "brownToBlonde/eight.jpg", width:'100px'%> 
+				<%= image_tag "brownToBlonde/eight.jpg", class: "gallery-item"  %> 
 			</div>
 
 		</div>
@@ -35,3 +38,19 @@
 	</div>
 
 </section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      	<%= image_tag "brownToBlonde/seven.jpg", class:"modal-img" %>
+      </div>
+    </div>
+  </div>
+</div>

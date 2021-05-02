@@ -1,6 +1,6 @@
-class CreateFriends < ActiveRecord::Migration[6.1]
+class Createstylists < ActiveRecord::Migration[6.1]
   def change
-    create_table :friends do |t|
+    create_table :stylists do |t|
       t.string :first_name
       t.string :last_name
       t.string :email
